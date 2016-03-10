@@ -1,0 +1,34 @@
+{
+  "jspm": {
+    "name": "mainapp",
+    "dependencies": {
+      "jquery": "npm:jquery@^2.2.1"
+    },
+    "devDependencies": {
+      "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.2"
+    },
+    "peerDependencies": {
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
+    },
+    "overrides": {
+      "npm:jquery@2.2.1": {
+        "format": "amd"
+      },
+      "npm:typescript@1.8.7": {
+        "browser": {},
+        "map": {
+          "buffer": "@empty",
+          "child_process": "@empty",
+          "fs": "@empty",
+          "os": "@empty",
+          "path": "@empty",
+          "process": "@empty",
+          "readline": "@empty"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "jspm": "^0.17.0-beta.11"
+  }
+}
